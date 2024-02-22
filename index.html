@@ -181,7 +181,8 @@
               <button
                 class="btn text-xl rounded-xl pt-4 pb-10 bg-green-200 text-green-500"
               >
-                <img class="" src="images/seat-green-filled.png" alt="" /> 40
+                <img class="" src="images/seat-green-filled.png" alt="" />
+                <span id="incrimentSet">40</span>
                 Seats left
               </button>
             </div>
@@ -440,17 +441,23 @@
             </div>
 
             <input
+              id="coponcord"
               type="text"
               placeholder="Have any copupon?"
               class="input-bordered rounded-xl py-3 mt-5 px-5 mr-2"
             />
-            <button class="bg-green-500 py-3 rounded-xl px-8 text-xl">
+            <button
+              id=""
+              class="bg-green-500 py-3 rounded-xl px-8 text-xl"
+              onclick="updetatgrandcost('applay-btn')"
+            >
               applay
             </button>
-
-            <div class="grid grid-cols-2 justify-between mt-5 gap-32">
-              <h3 class="text-lg font-bold">Grand Total</h3>
-              <h3 class="text-lg font-bold ml-4">BDT 1100</h3>
+            <div class="grid grid-cols-7 justify-between mt-5">
+              <h3 class="text-xl font-bold col-span-4">
+                Grand Total : <span id="grand-cost">0</span>
+              </h3>
+              <h3 class="text-xl font-bold col-span-3 pl-14">BDT 1100</h3>
             </div>
             <div class="input-itme">
               <h3 class="my-5 text-xl font-bold">Passenger Name*</h3>
@@ -461,7 +468,7 @@
                 class="py-5 w-full px-5 border-2 rounded-xl"
               />
 
-              <h3 class="my-5 text-xl font-bold">Phone Number*</h3>
+              <h3 id="phone" class="my-5 text-xl font-bold">Phone Number*</h3>
               <input
                 type="text "
                 placeholder="Enter your name
@@ -478,12 +485,14 @@
               />
 
               <button
-                class="w-full bg-green-500 my-10 p-5 text-center text-xl font-black font-black rounded-2xl"
+                class="w-full bg-green-500 my-10 p-5 text-center text-xl rounded-2xl disable"
+                id="button"
+                disabled
               >
                 <a href="#sussful">Next</a>
               </button>
             </div>
-            <div class="grid grid-cols-2 gap-3 w-11/12 m-auto">
+            <div class="grid grid-cols-2 gap-4 m-auto">
               <h4>
                 <a href="#"><u class="text-lg">Terms and Conditions</u></a>
               </h4>
