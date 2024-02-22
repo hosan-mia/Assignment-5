@@ -21,12 +21,6 @@ for(const set of allset){
             alert('set ar nai ');
             return;
         }
-
-        const phone = document.getElementById('phone');
-        const length = ;
-
-        
-
         const settectedContainer = document.getElementById('show');
 
         const div = document.getElementById('div');      
